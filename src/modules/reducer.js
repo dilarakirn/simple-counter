@@ -1,4 +1,4 @@
-export default function reducer(state, action = {}) {
+function counterReducer(state, action = {}) {
   switch (action.type) {
     case 'INCREMENT':
       state = state + 1;
@@ -13,3 +13,5 @@ export default function reducer(state, action = {}) {
       throw new Error();
   }
 }
+
+export { counterReducer };
