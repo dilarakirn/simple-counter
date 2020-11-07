@@ -11,7 +11,20 @@ const App: () => React$Node = () => {
         <CounterStore>
           <MyButton title="Press Me" color="#5399e6" />
           <MyText />
+
+          {/* Examples */}
+          {/* <MyButton title="Press Me" color="#5399e6" />
+          <MyText /> */}
         </CounterStore>
+
+        {/* Examples */}
+        {/* <CounterStore>
+          <MyButton title="Press Me" color="#5399e6" />
+          <MyText />
+
+          <MyButton title="Press Me" color="#5399e6" />
+          <MyText />
+        </CounterStore> */}
       </View>
     </>
   );
