@@ -2,16 +2,16 @@ import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { MyText, MyButton } from './components';
 
-import { Store } from './modules';
+import { CounterStore } from './modules/store';
 
 const App: () => React$Node = () => {
   return (
     <>
       <View style={styles.container}>
-        <Store>
+        <CounterStore>
           <MyButton title="Press Me" color="#5399e6" />
           <MyText />
-        </Store>
+        </CounterStore>
       </View>
     </>
   );
