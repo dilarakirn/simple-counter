@@ -16,6 +16,6 @@ react-native run-android
 
 on ios platform, on the main project folder, you should run
 ```
-react-native run-android
+react-native run-ios
 
 ```
