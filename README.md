@@ -1,18 +1,21 @@
 # simple-counter
 
-Ekranda bulunan butona tıklanarak artan sayının text'te gösterildiği temel counter projesi.
+Basic counter demo app on react native. Main purpose of the demo is, creating basic state management without using redux or any third party library. For this purpose, useContext and useReducer hooks are used in the project. You can use example comments to review sharing state by components.
 
-# projeyi çalıştırırken
-Projeyi lokalinize klonlayıp yarn install ve cd ios && pod install dedikten sonra react-native run-android diyerek android platformda, react-native run-ios diyerek iOS platformda çalıştırabilirsiniz.
+# runing the project
+After clone the project, you should run
+```
+yarn install && cd ios && pod install
 
-Projeyi javascript kullanarak react-native’de derledim.
+```
+on android platform, on the main project folder, you should run
+```
+react-native run-android
 
-# proje dosya yapısı hakkında
-Dosyalar içerisine src altına ‘components’ isminde klasör eklenerek MyButton ve MyText component’leri bu dosya altında tanımlanmıştır. App.js dosyasında oluşturmak yerine ayrı klasörde tanımlamak daha düzenli geldiği için bu şekilde ekleme yaptım.
+```
 
-src/modules klasörü altında interfaces.ts ve abstraction.ts dosyalarını javascript’te interface ve abstraction gibi yapılar kullanmadığım için tanımlamadım. Yerine reducer.js ve store.js dosyaları ekledim. reducer.js dosyası component state güncellemesi için gereken fonksiyonları içermektedir. store.js dosyası component’ler arasında state paylaşımını sağlayan fonksiyonları içermektedir.
+on ios platform, on the main project folder, you should run
+```
+react-native run-android
 
-# örnekler
-Ekranda farklı counter’ların ortak state’i paylaştığını görebilmek adına App.js dosyası içerisinde yorum satırlarında örnekler bulunmaktadır. Farklı veri yapısındaki yeni component’ler için component’e ait reducer ve store fonksiyonları tanımlanarak projede kullanılabilir.
-
-React hook'larından useContext ve useReducer kullanarak state yönetimi oluşturmaya çalıştım. 
+```
